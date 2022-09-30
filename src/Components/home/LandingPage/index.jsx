@@ -20,9 +20,11 @@ export default  function LandingPage (){
                 type!== "SearchMovie" ? "Top250TVs" : "Top250Movies"
               }/k_eczf0vgn`
         ).then((result)=>{
-            console.log(result.data);
-            setMovies(result.data.items)
+
+          setMovies(result.data.items)
             setLoading(false);
+            console.log(result.data);
+
         })
         
       },[type])
@@ -51,7 +53,7 @@ export default  function LandingPage (){
                 <div    className="main" key={index}  >                
                         <img     src={el.image}  />
                       <h2>{el.fullTitle}</h2>
-                      <h3>{el.crew}</h3>
+                      <h4>{el.crew}</h4>
                       <p>{el.year}</p>
                       <p>{el.imDbRating} </p>
                 </div>
