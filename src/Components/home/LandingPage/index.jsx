@@ -43,7 +43,7 @@ export default  function LandingPage (){
 
             <button  onClick={()=>{
               setType('')
-            }}>Series</button>
+            }}>Seriess</button>
 
             
          {movie.map((el,index)=>{
