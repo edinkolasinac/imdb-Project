@@ -23,6 +23,7 @@ export default  function LandingPage (){
 
           setMovies(result.data.items)
             setLoading(false);
+            console.log('edo');
             console.log(result.data);
 
         })
@@ -43,7 +44,7 @@ export default  function LandingPage (){
 
             <button  onClick={()=>{
               setType('')
-            }}>Seriess</button>
+            }}>Seriessdd</button>
 
             
          {movie.map((el,index)=>{
